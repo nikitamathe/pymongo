@@ -21,12 +21,12 @@ def add_staff_members():
 #Creating loop to get as many details as we want of members
     while True:
         print("Enter Staff Members detail:")
-        name = input()
-        email = input()
-        designation = input()
-        address = input()
-        age = int(input())
-        contact = int(input())
+        name = input("Enter Name:")
+        email = input("Enter Email:")
+        designation = input("Enter Designation:")
+        address = input("Enter Address:")
+        age = int(input("Enter Age:"))
+        contact = int(input("Enter Contact:"))
          #creating dictionary for it 
         staff_member = {
          "Name" : name,
@@ -46,7 +46,8 @@ def add_staff_members():
     if staff_list:
       collection.insert_many(staff_list)
       print("Staff members added successfully!")
-      
+    else:
+        print("Member is not added")
     
     
 add_staff_members()
