@@ -1,0 +1,1 @@
+number = int(input("Enter a number between 6 and 16: ")
